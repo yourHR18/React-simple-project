@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background:#6482AD;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navigation{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    font-weight:bold
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#side{
+   display:flex;
+   gap:40px;
+}
+#side a{
+    width:100px;
+    text-align:center;
+    font-weight:normal;
+    text-decoration:none;
+    color:black;
+    cursor:pointer;
+    padding:10px;
+    margin:5px;
+    box-shadow:1px 1px 5px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#side a:hover{
+    color:blue;
+}
+.section{
+    margin:100px 50px 100px 50px;
+}
+.section h2{
+    margin-bottom:20px;
+    font-weight:bold;
+}
+.card{
+    width:300px;
+    height:550px;
+    display:flex;
+    flex-direction:column;
+    border:1px solid black;
+    border-radius:20px 20px 0 0;
+    background:black;
+    color:white;
+    transition:all 1s linear;
+
+}
+.card img{
+    width:298.4px;
+    height:298.4px;
+    object-fit:fill;
+    border-radius:20px 20px 0 0;
+}
+.card h1{
+    margin-top:2px;
+    padding-left:20px;
+    font-weight:bold;
+    background:black;
+    color:white;
+    
+}
+.card p{
+    padding:10px;
+    color:white;
+    background:black;
+    font-size:13px;
+}
+.card a{
+    bottom:0;
+    font-weight:bold;
+}
+.sec{
+    margin:100px 50px 100px 50px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover{
+    transform:scale(1.1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#sec0 h1{
+    width:100%;
+    font-size:5rem;
+    text-align:center;
+}
+#foot{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    margin-bottom:20px;
 }
